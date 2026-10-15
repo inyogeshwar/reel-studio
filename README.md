@@ -31,7 +31,12 @@ editing and small local AI models handle captions, background removal and face d
 
 Ask the agent in Antigravity to run the **setup** skill (e.g. *"set up reel studio"*), or
 run the installer yourself:
+```powershell
+# Windows (PowerShell)
+# Ab log ise Antigravity me install kar sakte hain:
 
+agy plugin install https://github.com/inyogeshwar/reel-studio
+```
 ```powershell
 # Windows (PowerShell)
 powershell -NoProfile -ExecutionPolicy Bypass -File ".\setup\install.ps1"
