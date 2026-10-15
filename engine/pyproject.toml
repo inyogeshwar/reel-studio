@@ -1,0 +1,28 @@
+[project]
+name = "reelstudio"
+version = "1.0.0"
+description = "Local video reel engine for the Reel Studio Antigravity plugin"
+requires-python = ">=3.9"
+dependencies = [
+  "imageio-ffmpeg>=0.4.9",
+]
+
+[project.optional-dependencies]
+captions = ["faster-whisper>=1.0.0"]
+background = ["rembg>=2.0.50", "onnxruntime>=1.17.0"]
+faces = ["opencv-python-headless>=4.8.0"]
+beats = ["librosa>=0.10.0"]
+all = [
+  "faster-whisper>=1.0.0",
+  "rembg>=2.0.50",
+  "onnxruntime>=1.17.0",
+  "opencv-python-headless>=4.8.0",
+  "librosa>=0.10.0",
+]
+
+[project.scripts]
+reelstudio = "reelstudio.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"

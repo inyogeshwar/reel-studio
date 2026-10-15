@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Reel Studio engine launcher (macOS / Linux / Git Bash on Windows).
+set -euo pipefail
+PLUGIN_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+export REELSTUDIO_HOME="${REELSTUDIO_HOME:-$HOME/ReelStudio}"
+PY="$REELSTUDIO_HOME/venv/bin/python"
+[ -x "$PY" ] || PY="python3"
+export PYTHONPATH="$PLUGIN_ROOT/engine:${PYTHONPATH:-}"
+exec "$PY" -m reelstudio.cli "$@"

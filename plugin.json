@@ -1,0 +1,5 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "reel-studio",
+  "description": "Turn a folder of clips or photos into ready-to-post vertical reels: auto-cut to music, captions from speech, background removal and face-aware framing. Runs fully on your machine with ffmpeg and local AI models. No account, no licence."
+}

@@ -1,0 +1,16 @@
+# Optional extras for the Reel Studio engine.
+# The core (ffmpeg only) needs none of these. Install what you need.
+
+# Captions / speech-to-text
+faster-whisper>=1.0.0
+
+# Background removal
+rembg>=2.0.50
+onnxruntime>=1.17.0
+
+# Face detection / smart framing
+opencv-python-headless>=4.8.0
+
+# More accurate beat detection for auto beat-sync cutting
+# (the engine also has a built-in detector that needs only ffmpeg)
+librosa>=0.10.0
